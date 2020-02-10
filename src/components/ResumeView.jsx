@@ -6,7 +6,7 @@ export default function ResumeView() {
   const [resumes, setResumeList] = useState([]);
   const [selectedResume, setSelectedResume] = useState(null);
   const getResumes = () => {
-    fetch(`http://localhost:3000/api/resumes/`)
+    fetch(`/api/resumes/`)
       .then(resumes => resumes.json())
       .then(resumes => setResumeList(resumes));
   };

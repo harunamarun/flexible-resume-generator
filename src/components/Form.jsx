@@ -10,7 +10,7 @@ export default function Form() {
     address: "TOKYO"
   };
   const submitPlfile = async () => {
-    fetch(`http://localhost:3000/api/resumes`, {
+    fetch(`/api/resumes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json; charset=utf-8"
