@@ -32,8 +32,8 @@ Resume.prototype.serialize = function() {
 
 module.exports = knex => {
   return {
-    create: require("./create")(knex, Resume)
-    // list: require("./list")(knex, Resume),
+    create: require("./create")(knex, Resume),
+    list: require("./list")(knex, Resume)
     // get: require("./get")(knex, Resume),
     // delete: require("./delete")(knex, Resume)
   };
