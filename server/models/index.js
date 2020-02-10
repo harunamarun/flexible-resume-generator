@@ -1,5 +1,5 @@
 module.exports = function(knex) {
   return {
-    todos: require("./todos")(knex)
+    resumes: require("./resumes/")(knex)
   };
 };

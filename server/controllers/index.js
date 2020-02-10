@@ -2,10 +2,10 @@ const express = require("express");
 
 const router = express.Router();
 
-const todoRouter = require("./todo");
+const resumeRouter = require("./resume");
 
 module.exports = models => {
-  router.use("/todos", todoRouter(models));
+  router.use("/resumes", resumeRouter(models));
 
   return router;
 };
