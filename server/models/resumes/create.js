@@ -5,9 +5,9 @@ module.exports = (knex, Resume) => {
     const address = params.address;
     const gender = params.gender;
     const career1 = params.career1;
-    const desc1 = params.career1_description;
+    const desc1 = params.desc1;
     const career2 = params.career2;
-    const desc2 = params.career2_description;
+    const desc2 = params.desc2;
     const template = params.template;
 
     return knex("resumes")
@@ -17,17 +17,15 @@ module.exports = (knex, Resume) => {
         address,
         gender,
         career1,
-        desc1,
+        career1_description: desc1,
         career2,
-        desc2,
+        career2_description: desc2,
         template
       })
       .then(() => {
-        return (
-          knex("resumes")
-            //   .where({ id })
-            .select()
-        );
+        return knex("resumes")
+          .where({ firstname })
+          .select();
       })
       .then(resumes => new Resume(resumes.pop()))
       .catch(err => {

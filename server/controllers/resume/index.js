@@ -12,11 +12,12 @@ module.exports = models => {
         address: req.body.address,
         gender: req.body.gender,
         career1: req.body.career1,
-        career1_description: req.body.desc1,
+        desc1: req.body.desc1,
         career2: req.body.career2,
-        career2_description: req.body.desc2,
+        desc2: req.body.desc2,
         template: req.body.template
       })
+
       .then(resume => res.status(201).json(resume.serialize()))
       .catch(err => {
         return res.status(400).send(err.message);
