@@ -26,8 +26,7 @@ app.use(bodyParser.json({ type: "application/json", limit: "50mb" }));
 
 // 3. If the requests begin with '/api', hand them off to the API router
 app.use("/api", apiRouter);
-app.use("/resumes/:id", express.static(`${__dirname}/public/index.html`)); // otherwise load the client app
-app.use(express.static(`${__dirname}/../../build/`));
+app.use(express.static(`${__dirname}/../build/`));
 
 app.use((err, req, res, next) => {
   if (err.stack) {
