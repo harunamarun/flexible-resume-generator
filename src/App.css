@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   height: 80px;
@@ -24,15 +13,57 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* separated colum (right and left)*/
+.split {
+  display: table;
+  width: 100%;
+}
+.split-item {
+  display: table-cell;
+  padding: 20px;
+  height: 100%;
+}
+.form {
+  position: fixed;
+  width: 40%;
+  text-align: left;
+  border-right: 10px red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* inside Form*/
+.form-container {
+  width: 100%;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.address {
+  margin-top: 30px;
+}
+
+.gender {
+  margin-top: 30px;
+}
+
+.career {
+  margin-bottom: 20px;
+}
+.career1 {
+  margin-top: 30px;
+}
+
+.career2 {
+  margin-top: 30px;
+}
+.template {
+  margin-top: 30px;
+}
+#save-btn {
+  margin: 40px;
+}
+
+label {
+  margin: 5px;
 }

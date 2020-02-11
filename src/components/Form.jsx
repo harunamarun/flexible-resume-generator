@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 
 export default function Form() {
   const [firstname, setFirstname] = useState("");
@@ -37,18 +39,18 @@ export default function Form() {
   };
 
   return (
-    <div className="form">
+    <div className="split-item form">
       <h2>Input your profile</h2>
-      <div className="post-content">
+      <div className="form-container">
         <div className="name">
           <label htmlFor="firstname">First name</label>
-          <input
+          <TextField
             id="firstname"
             value={firstname}
             onChange={e => setFirstname(e.target.value)}
           />
           <label htmlFor="lastname">Last name</label>
-          <input
+          <TextField
             id="lastname"
             value={lastname}
             onChange={e => setLastname(e.target.value)}
@@ -56,7 +58,7 @@ export default function Form() {
         </div>
         <div className="address">
           <label htmlFor="address">Address</label>
-          <input
+          <TextField
             id="address"
             value={address}
             onChange={e => setAddress(e.target.value)}
@@ -71,7 +73,7 @@ export default function Form() {
             value={gender}
             onClick={() => setGender("male")}
           />
-          male
+          male&emsp;
           <input
             type="radio"
             name="gender"
@@ -81,34 +83,46 @@ export default function Form() {
           />
           female
         </div>
-        <div className="career">
+        <div className="careers">
           <div className="career1">
-            <label htmlFor="gender">Career1</label>
-            <input
-              id="career1"
-              value={career1}
-              onChange={e => setCareer1(e.target.value)}
-            />
-            <label htmlFor="career1-desc">Career1 Description</label>
-            <textarea
-              id="career1-desc"
-              value={desc1}
-              onChange={e => setCareerDes1(e.target.value)}
-            />
+            <div className="career">
+              <label htmlFor="career1">Career1</label>
+              <TextField
+                id="career1"
+                value={career1}
+                onChange={e => setCareer1(e.target.value)}
+              />
+            </div>
+            <div className="career">
+              <label htmlFor="career1-desc">Career1 Description</label>
+              <TextField
+                multiline
+                rowsMax="5"
+                id="career1-desc"
+                value={desc1}
+                onChange={e => setCareerDes1(e.target.value)}
+              />
+            </div>
           </div>
           <div className="career2">
-            <label htmlFor="gender">Career2</label>
-            <input
-              id="career2"
-              value={career2}
-              onChange={e => setCareer2(e.target.value)}
-            />
-            <label htmlFor="career2-desc">Career2 Description</label>
-            <textarea
-              id="career2-desc"
-              value={desc2}
-              onChange={e => setCareerDes2(e.target.value)}
-            />
+            <div className="career">
+              <label htmlFor="career2">Career2</label>
+              <TextField
+                id="career2"
+                value={career2}
+                onChange={e => setCareer2(e.target.value)}
+              />
+            </div>
+            <div className="career">
+              <label htmlFor="career2-desc">Career2 Description</label>
+              <TextField
+                multiline
+                rowsMax="5"
+                id="career2-desc"
+                value={desc2}
+                onChange={e => setCareerDes2(e.target.value)}
+              />
+            </div>
           </div>
           <div className="template">
             <label htmlFor="template">Template</label>
@@ -119,7 +133,7 @@ export default function Form() {
               value={template}
               onClick={() => setTemplate("temp1")}
             />
-            template1
+            template1&emsp;
             <input
               type="radio"
               name="template"
@@ -131,9 +145,9 @@ export default function Form() {
           </div>
         </div>
       </div>
-      <button id="save-btn" onClick={submitPlfile}>
+      <Button variant="contained" id="save-btn" onClick={submitPlfile}>
         Save
-      </button>
+      </Button>
     </div>
   );
 }

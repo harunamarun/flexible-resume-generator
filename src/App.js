@@ -9,8 +9,10 @@ function App() {
       <header className="App-header">
         <h1> Prepare for getting a job!</h1>
       </header>
-      <Form />
-      <ResumeView />
+      <div className="split">
+        <Form />
+        <ResumeView />
+      </div>
     </div>
   );
 }

@@ -16,12 +16,12 @@ export default function ResumeView() {
   }, []);
 
   return (
-    <React.Fragment>
+    <dev className="split-item resume-view">
       {selectedResume === null ? (
         <ResumeList resumes={resumes} setSelectedResume={setSelectedResume} />
       ) : (
         <ResumeDetail selectedResume={selectedResume} />
       )}
-    </React.Fragment>
+    </dev>
   );
 }
