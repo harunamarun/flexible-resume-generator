@@ -37,7 +37,6 @@ yarn seed
 ```
 
 #### Build the front end:
-Builds the app for production to the `build` folder.   
 ```
 yarn build
 ```
@@ -105,8 +104,3 @@ yarn start
    ```
  
 
-
-
-Add your postgres config to the .env file
-DATABASE_URL = postgresql+psycopg2://{Your databaseusername}:password@localhost/locations
-Build:
