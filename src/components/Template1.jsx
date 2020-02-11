@@ -3,11 +3,10 @@ import React from "react";
 export default function(props) {
   console.log("props.selectedResume", props.selectedResume);
   return (
-    <React.Fragment>
+    <div id="temp1">
       <div className="name">
         name:{props.selectedResume.firstname} {props.selectedResume.lastname}
       </div>
-      <div className="gender">gender:{props.selectedResume.gender}</div>
       <div className="career1">career1:{props.selectedResume.career1}</div>
       <div className="career1-desc">
         career1 description:{props.selectedResume.desc1}
@@ -17,6 +16,6 @@ export default function(props) {
       <div className="career2-desc">
         career2 description:{props.selectedResume.desc2}
       </div>
-    </React.Fragment>
+    </div>
   );
 }

@@ -40,7 +40,7 @@ export default function Form() {
     <div className="split-item form">
       <h2>Input your profile</h2>
       <div className="form-container">
-        <div className="name">
+        <div className="form-name">
           <label htmlFor="firstname">First name</label>
           <TextField
             id="firstname"
@@ -54,7 +54,7 @@ export default function Form() {
             onChange={e => setLastname(e.target.value)}
           />
         </div>
-        <div className="address">
+        <div className="form-address">
           <label htmlFor="address">Address</label>
           <TextField
             id="address"
@@ -62,7 +62,7 @@ export default function Form() {
             onChange={e => setAddress(e.target.value)}
           />
         </div>
-        <div className="gender">
+        <div className="form-gender">
           <label htmlFor="gender">Gender</label>
           <input
             type="radio"
@@ -81,8 +81,8 @@ export default function Form() {
           />
           female
         </div>
-        <div className="careers">
-          <div className="career1">
+        <div className="form-careers">
+          <div className="form-career1">
             <div className="career">
               <label htmlFor="career1">Career1</label>
               <TextField
@@ -102,7 +102,7 @@ export default function Form() {
               />
             </div>
           </div>
-          <div className="career2">
+          <div className="form-career2">
             <div className="career">
               <label htmlFor="career2">Career2</label>
               <TextField

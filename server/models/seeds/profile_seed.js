@@ -8,7 +8,7 @@ exports.seed = function(knex) {
         {
           firstname: "Hanako",
           lastname: "Yamada",
-          address: "000-0000 xxxxxxxx Itabashi-ku, Tokyo",
+          address: "xxxxxxxx Itabashi-ku, Tokyo",
           gender: "female",
           career1: "********* corporation",
           career1_description:
