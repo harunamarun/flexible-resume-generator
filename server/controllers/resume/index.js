@@ -22,12 +22,15 @@ module.exports = models => {
         return res.status(400).send(err.message);
       });
 
-  const listResumes = (req, res) =>
-    models.resumes
+  const listResumes = (req, res) => {
+    console.log("req", req.sesson);
+    console.log("req", req.user);
+    return models.resumes
       .list()
       .then(resumes => resumes.map(resume => resume.serialize()))
       .then(resumes => res.status(200).json(resumes))
       .catch(err => res.status(400).send(err.message));
+  };
 
   const getResume = (req, res) =>
     models.resumes

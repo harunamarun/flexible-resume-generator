@@ -14,6 +14,53 @@ const express = require("express");
 
 const app = express();
 
+//auth
+const passport = require("passport");
+const LocalStrategy = require("passport-local").Strategy;
+const session = require("express-session");
+
+app.use(passport.initialize());
+passport.use(
+  new LocalStrategy(function(username, password, done) {
+    //   if (なんらかのエラー) {
+    //     return done(エラー内容);
+    // }
+    // else if (失敗) {
+    //     return done(null, false);
+    // }
+    // else if (成功) {
+    //     return done(null, username);
+    // }
+    console.log("called LocalStrategy");
+    return done(null, { hoge: "hoge", fuga: "fuga" });
+  })
+);
+app.get("/login", function(req, res) {
+  res.sendFile(`${__dirname}/login.html`);
+});
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post("/login", passport.authenticate("local"), function(req, res) {
+  // 認証成功するとここが実行される
+  console.log("認証成功！！！！！");
+  res.redirect("/");
+});
+
+app.use(
+  session({
+    secret: "○○"
+  })
+);
+app.use(passport.session());
+
+passport.serializeUser(function(user, done) {
+  console.log("user", user);
+  done(null, user);
+});
+
+passport.deserializeUser(function(user, done) {
+  done(null, user);
+});
 /**
  ********************************SERVER SETUP********************************
  ****************************************************************************
