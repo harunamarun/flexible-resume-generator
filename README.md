@@ -69,7 +69,6 @@ yarn start
      "desc1":"I experienced fooooooooo!",
      "career2":"*** corporation",
      "desc2":"I experienced piyopiyo!",
-     "template":"temp1",
      "updatedAt":"2020-02-10 04:11:10"
     },
     {...}
@@ -87,9 +86,9 @@ yarn start
     gender: "female",
     career1: "******** corporation",
     desc1: "enjoy!!!!",
-    template: "temp1"
    }
    ```
+   `firstname`and`lastname` are required, others are optional.  
    
 3. GET `/api/resumes/:id`</br>
    Return a resume's information.   
@@ -103,4 +102,3 @@ yarn start
    }
    ```
  
-
