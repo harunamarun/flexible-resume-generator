@@ -4,7 +4,7 @@
   
 This app provides your resume with some layout. 
 
-Let's prepare getting job!
+Let's prepare for getting a job!
 1. You add your information.  
 2. You select layout.  
 3. You can get your resume!
@@ -58,7 +58,7 @@ Builds the app for production to the `build` folder.
 yarn build
 ```
 #### Run the front end test: (This is `npx create-react-app` option)
-aunches the test runner in the interactive watch mode.   
+Launches the test runner in the interactive watch mode.   
 ```
 yarn test
 ```
