@@ -11,7 +11,7 @@ Let's prepare for getting a job!
 
 
 ## URL
-You try this app.   
+You can try this app.   
 https://create-resume-app.herokuapp.com/
 
 
@@ -26,18 +26,20 @@ git clone https://github.com/harunamarun/create-resume-app.git
 yarn
 ```
 
-#### Migrate and seed Data:
+#### Create database:
 • We have a migrate file now. 
 ```
 yarn migrate
 ```
-• We can rollback using this command.
-```
-yarn rollback
-```
- •We have one seed file. If you want to use You can use this command.
+• We have one seed file. If you want to use You can use this command.
 ```
 yarn seed
+```
+
+#### Build the front end:
+Builds the app for production to the `build` folder.   
+```
+yarn build
 ```
 
 #### Start server:
@@ -45,23 +47,7 @@ yarn seed
 yarn start
 ```
 
-#### Run the front end: (This is `npx create-react-app` option)
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.   
-Runs the app in the development mode.   
-```
-yarn hack
-```
 
-#### Build the front end: (This is `npx create-react-app` option)
-Builds the app for production to the `build` folder.   
-```
-yarn build
-```
-#### Run the front end test: (This is `npx create-react-app` option)
-Launches the test runner in the interactive watch mode.   
-```
-yarn test
-```
 
 ## API
 #### Endpoints
