@@ -11,7 +11,6 @@ export default function Form() {
   const [career2, setCareer2] = useState("");
   const [desc1, setCareerDes1] = useState("");
   const [desc2, setCareerDes2] = useState("");
-  const [template, setTemplate] = useState("");
 
   const newPlofile = {
     firstname,
@@ -21,8 +20,7 @@ export default function Form() {
     career1,
     career2,
     desc1,
-    desc2,
-    template
+    desc2
   };
 
   const submitPlfile = async () => {
@@ -123,25 +121,6 @@ export default function Form() {
                 onChange={e => setCareerDes2(e.target.value)}
               />
             </div>
-          </div>
-          <div className="template">
-            <label htmlFor="template">Template</label>
-            <input
-              type="radio"
-              name="template"
-              id="template"
-              value={template}
-              onClick={() => setTemplate("temp1")}
-            />
-            template1&emsp;
-            <input
-              type="radio"
-              name="template"
-              id="template"
-              value={template}
-              onClick={() => setTemplate("temp2")}
-            />
-            template2
           </div>
         </div>
       </div>

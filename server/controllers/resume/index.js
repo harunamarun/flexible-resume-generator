@@ -14,8 +14,7 @@ module.exports = models => {
         career1: req.body.career1,
         desc1: req.body.desc1,
         career2: req.body.career2,
-        desc2: req.body.desc2,
-        template: req.body.template
+        desc2: req.body.desc2
       })
 
       .then(resume => res.status(201).json(resume.serialize()))

@@ -10,7 +10,6 @@ const Resume = function(dbResume) {
   this.desc1 = dbResume.career1_description;
   this.career2 = dbResume.career2;
   this.desc2 = dbResume.career2_description;
-  this.template = dbResume.template;
   this.updatedAt = new Date(dbResume.updated_at);
 };
 
@@ -25,7 +24,6 @@ Resume.prototype.serialize = function() {
     desc1: this.desc1,
     career2: this.career2,
     desc2: this.desc2,
-    template: this.template,
     updatedAt: moment(this.updatedAt).format("YYYY-MM-DD hh:mm:ss")
   };
 };

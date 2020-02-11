@@ -8,7 +8,6 @@ module.exports = (knex, Resume) => {
     const desc1 = params.desc1;
     const career2 = params.career2;
     const desc2 = params.desc2;
-    const template = params.template;
 
     return knex("resumes")
       .insert({
@@ -19,8 +18,7 @@ module.exports = (knex, Resume) => {
         career1,
         career1_description: desc1,
         career2,
-        career2_description: desc2,
-        template
+        career2_description: desc2
       })
       .then(() => {
         return knex("resumes")

@@ -14,10 +14,6 @@ exports.up = function(knex, Promise) {
     t.text("career2");
     t.text("career2_description");
 
-    t.enu("template", ["temp1", "temp2"])
-      .index()
-      .notNullable();
-
     t.timestamp("updated_at")
       .notNullable()
       .defaultTo(knex.fn.now());

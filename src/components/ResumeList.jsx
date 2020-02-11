@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function ResumeList(props) {
   return (
@@ -12,7 +12,6 @@ export default function ResumeList(props) {
           >
             {resume.firstname} &nbsp;
             {resume.lastname} &nbsp;
-            {resume.temp1}
           </li>
         );
       })}

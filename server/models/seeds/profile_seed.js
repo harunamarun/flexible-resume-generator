@@ -8,13 +8,14 @@ exports.seed = function(knex) {
         {
           firstname: "Hanako",
           lastname: "Yamada",
-          address: "Itabashi-ku, Tokyo",
+          address: "000-0000 xxxxxxxx Itabashi-ku, Tokyo",
           gender: "female",
           career1: "********* corporation",
-          career1_description: "I experienced fooooooooo!",
+          career1_description:
+            "I experienced fooooooooo!fooooooooooooooooooooooooooooooooooo!",
           career2: "*** corporation",
-          career2_description: "I experienced piyopiyo!",
-          template: "temp1"
+          career2_description:
+            "I experienced bar!fooooooooooooooooooooooooooooooooooo!"
         }
       ]);
     });
