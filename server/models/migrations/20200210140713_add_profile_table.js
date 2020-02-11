@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     t.string("firstname", 30).notNullable();
     t.string("lastname", 30).notNullable();
 
-    t.text("address").notNullable();
+    t.text("address");
     t.enu("gender", ["male", "female"]).index();
 
     t.text("career1");
@@ -14,7 +14,9 @@ exports.up = function(knex, Promise) {
     t.text("career2");
     t.text("career2_description");
 
-    t.enu("template", ["temp1", "temp2"]).index();
+    t.enu("template", ["temp1", "temp2"])
+      .index()
+      .notNullable();
 
     t.timestamp("updated_at")
       .notNullable()
