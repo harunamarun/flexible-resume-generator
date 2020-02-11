@@ -10,7 +10,9 @@ export default function ResumeList(props) {
               props.setSelectedResume(resume);
             }}
           >
-            {resume.firstname}
+            {resume.firstname} &nbsp;
+            {resume.lastname} &nbsp;
+            {resume.temp1}
           </li>
         );
       })}

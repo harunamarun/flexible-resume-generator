@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> Prepare getting job!</h1>
+        <h1> Prepare for getting a job!</h1>
       </header>
       <Form />
       <ResumeView />

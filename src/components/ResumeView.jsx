@@ -15,8 +15,6 @@ export default function ResumeView() {
     getResumes();
   }, []);
 
-  console.log("resumes", resumes);
-  console.log("sere", selectedResume);
   return (
     <React.Fragment>
       {selectedResume === null ? (
