@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ResumeList(props) {
   return (
-    <div>
+    <div id="resume-list">
       {props.resumes.map(resume => {
         return (
           <li
