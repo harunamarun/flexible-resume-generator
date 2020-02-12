@@ -7,9 +7,9 @@ This app provides your resume with some layout.
 Let's prepare for getting a job!
 1. You add your information.  
 2. You select layout.  
-3. You can get your resume!　　
-![ScreenShot](https://user-images.githubusercontent.com/56245555/74307176-1592ad00-4da8-11ea-8fa0-102e11efe52c.png)　　
+3. You can get your resume!　
 
+![ScreenShot](https://user-images.githubusercontent.com/56245555/74307176-1592ad00-4da8-11ea-8fa0-102e11efe52c.png)　　
 
 ## URL
 You can try this app.   
