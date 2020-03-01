@@ -12,7 +12,7 @@ Let's prepare for getting a job!
 
 ## URL
 You can try this app.   
-https://create-resume-app.herokuapp.com/　　　
+https://create-resume-app.herokuapp.com/
 
 <img src="https://user-images.githubusercontent.com/56245555/74307176-1592ad00-4da8-11ea-8fa0-102e11efe52c.png" width="400px">　　
 
