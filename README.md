@@ -1,6 +1,7 @@
 # “Flexible Resume Generator”  
 
-"This was created during my time as a student at Code Chrysalis."  
+"This was created during my time as a student at <a href=https://www.codechrysalis.io/>Code Chrysalis</a>."  
+
   
 This app provides your resume with some layout. 
 
@@ -49,7 +50,7 @@ yarn build
 yarn start
 ```
 
-## Teck stack
+## Teck Stack
 <img src="https://user-images.githubusercontent.com/56245555/77295760-daca5000-6d29-11ea-9895-af91bdc89aea.png" width="400px">
 
 
