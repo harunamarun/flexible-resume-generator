@@ -9,13 +9,14 @@ Let's prepare for getting a job!
 2. You select layout.  
 3. You can get your resume!　
 
-
 ## URL
 You can try this app.   
 https://create-resume-app.herokuapp.com/
 
 <img src="https://user-images.githubusercontent.com/56245555/74307176-1592ad00-4da8-11ea-8fa0-102e11efe52c.png" width="400px">　　
 
+## Why did I create this?
+<img src="https://user-images.githubusercontent.com/56245555/77296123-73f96680-6d2a-11ea-9081-418e17b390ce.png" width="400px"><img src="https://user-images.githubusercontent.com/56245555/77296094-63e18700-6d2a-11ea-8ec1-f49c6c30c4cf.png" width="400px">
 
 ## Setup Instructions
 #### Clone the repo:
@@ -47,6 +48,9 @@ yarn build
 ```
 yarn start
 ```
+
+## Teck stack
+<img src="https://user-images.githubusercontent.com/56245555/77295760-daca5000-6d29-11ea-9895-af91bdc89aea.png" width="400px">
 
 
 
